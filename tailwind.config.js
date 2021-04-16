@@ -1,11 +1,11 @@
 module.exports = {
-    purge: ["./resources/views/welcome.blade.php"],
+    purge: ["./resources/views/layouts/app.blade.php"],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {},
+        extend: {}
     },
     variants: {
-        extend: {},
-    },
-    plugins: [],
+        width: ['responsive', 'hover', 'focus'],
+        borderWidth: ['responsive', 'hover'],},
+    plugins: []
 };

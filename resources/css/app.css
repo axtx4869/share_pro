@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .w-fit-content {
+      width: fit-content;
+    }
+
+    .note-bg {
+      background-image: linear-gradient(#cad7e0 1px, rgba(0 0 0 / 0) 0),
+        linear-gradient(90deg, #cad7e0 1px, rgba(0 0 0 / 0) 0);
+      background-size: 20px 20px;
+    }
+}
