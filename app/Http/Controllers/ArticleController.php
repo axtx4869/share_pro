@@ -16,15 +16,14 @@ class ArticleController extends Controller
     {
         $this->authorizeResource(Article::class, 'article');
     }
+    
     /**
      * @return view
      */
     public function index()
     {
         $articles = Article::orderBy('created_at', 'DESC')->simplePaginate(6);
-        $auth = Auth::user();
-        $browser_title = '| ' . $auth["name"]. 'さん';
-        return view('articles.index', ['articles' => $articles, 'browser_title' => $browser_title]);
+        return view('articles.index', ['articles' => $articles]);
     }
 
     /**
