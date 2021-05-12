@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@section('title',$browser_title)
 @section('content')
     @include('nav')
     <!-- フラッシュメッセージ -->
